@@ -1,28 +1,17 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
-import StepsHeader from "./StepsHeader";
+import { StepsHeader } from "./StepsHeader";
+import { PageHeader } from "./PageHeader";
 import { steps } from "../constants";
+import { SkipGrid } from "./SkipGrid";
 
-const API_URL = 'https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft';
-
-const SkipSelectorPage = () => {
-    const [skipOptions, setSkipOptions] = useState([]);
-
-    useEffect(() => {
-        const fetchSkipOptions = async () => {
-            const response = await fetch(API_URL);
-            const data = await response.json();
-            setSkipOptions(data);
-        }
-        fetchSkipOptions();
-    }, []);
-
+export function SkipSelectorPage() {
   return (
     <section className="py-16">
         <StepsHeader steps={steps} />
+        <PageHeader 
+            title="Choose Your Skip Size"
+            description="Select the skip size that best suits your needs"
+        />
+        <SkipGrid />
     </section>
   )
 }
-
-export default SkipSelectorPage

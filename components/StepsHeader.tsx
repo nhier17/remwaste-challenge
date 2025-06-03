@@ -13,7 +13,7 @@ interface StepsHeaderProps {
     steps: Steps[];
 }
 
-const StepsHeader = ({ steps }: StepsHeaderProps) => {
+export function StepsHeader({ steps }: StepsHeaderProps) {
   return (
     <section className="w-full bg-white shadow-sm py-4 px-6 border-b">
 <div className="flex items-center justify-between max-w-6xl mx-auto overflow-x-auto">
@@ -38,6 +38,4 @@ const StepsHeader = ({ steps }: StepsHeaderProps) => {
       </div>
     </section>
   )
-}
-
-export default StepsHeader
+};
