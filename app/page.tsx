@@ -1,10 +1,8 @@
-import Image from "next/image";
-
+import SkipSelectorPage from "@/components/SkipSelectorPage";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1>Remwaste</h1>
-      <p>Remwaste is a waste management platform that helps you to manage your waste.</p>
+    <div className="flex min-h-screen flex-1 flex-col px-5 xs:px-10 md:px-16 min-h-screen bg-gradient-to-b from-background to-muted pb-20">
+      <SkipSelectorPage />
     </div>
   );
 }
