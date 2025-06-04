@@ -11,11 +11,13 @@ type Steps = {
 
 interface StepsHeaderProps {
     steps: Steps[];
+    currentStep: number;
+    className?: string;
 }
 
-export function StepsHeader({ steps }: StepsHeaderProps) {
+export function StepsHeader({ steps, currentStep, className }: StepsHeaderProps) {
   return (
-    <section className="w-full bg-white shadow-sm py-4 px-6 border-b">
+    <section className={cn("w-full bg-white shadow-sm py-4 px-6 border-b", className)}>
 <div className="flex items-center justify-between max-w-6xl mx-auto overflow-x-auto">
         {steps.map((step) => {
           const Icon = step.icon;

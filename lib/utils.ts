@@ -7,6 +7,6 @@ export function cn(...inputs: ClassValue[]) {
 
 // calculate total price 
 export const totalPrice = (priceBeforeVat: number, vat: number) => {
-    return priceBeforeVat + (priceBeforeVat * vat / 100);
+    return Math.round(priceBeforeVat + (priceBeforeVat * vat / 100));
 }
     

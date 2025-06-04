@@ -8,4 +8,6 @@ export type SkipData = {
     vat: number;
     badge?: string;
     className?: string;
+    isSelected?: boolean;
+    onSelect?: () => void;
 }
