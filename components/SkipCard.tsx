@@ -23,7 +23,6 @@ export function SkipCard({
     price_before_vat,
     vat,
     size,
-    badge,
     className,
     isSelected,
     onSelect,
@@ -55,9 +54,9 @@ export function SkipCard({
               fill
             />
             <div className="absolute top-4 right-4 z-20">
-              {badge && (
-                <Badge className="bg-primary text-white font-medium">
-                  {badge}
+              {size && (
+                <Badge className="bg-[#B86010] text-white font-medium">
+                  {size} Yards
                 </Badge>
               )}
             </div>
@@ -100,7 +99,7 @@ export function SkipCard({
                   <TooltipTrigger asChild>  
                     <Button 
                       className={cn(
-                        "w-full",
+                        "px-6 py-2 min-h-11 w-full",
                         isSelected 
                           ? "bg-primary/90 hover:bg-primary/80" 
                           : "bg-white/10 hover:bg-white/20 text-white"

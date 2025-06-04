@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
-const interSans = Inter({
-  variable: "--font-inter-sans",
-  subsets: ["latin"],
-});
-
-const interMono = Inter({
-  variable: "--font-inter-mono",
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   subsets: ["latin"],
 });
 
@@ -25,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${interSans.variable} ${interMono.variable} antialiased`}
+        className={`${bricolage.variable} antialiased`}
       >
         {children}
       </body>

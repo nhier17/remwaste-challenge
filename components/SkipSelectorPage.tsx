@@ -29,7 +29,7 @@ export function SkipSelectorPage() {
                       key={index} 
                       className="p-6 border-none bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors group"
                     >
-                      <feature.icon className="size-8 text-blue-500" />
+                      <feature.icon className="size-8 text-[#007F6E]" />
                       <h3 className="font-semibold text-white">{feature.title}</h3>
                       <p className="text-sm text-slate-300">{feature.description}</p>
                     </Card>

@@ -6,7 +6,6 @@ export type SkipData = {
     price_before_vat: number;
     size: number;
     vat: number;
-    badge?: string;
     className?: string;
     isSelected?: boolean;
     onSelect?: () => void;

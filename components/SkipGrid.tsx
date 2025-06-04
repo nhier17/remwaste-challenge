@@ -85,7 +85,7 @@ export function SkipGrid() {
         </div>
   
         {selectedSkip && (
-          <Button size="lg" className="w-full">
+          <Button size="lg" className="w-full bg-[#007F6E] hover:bg-orange-600 min-h-11 px-6 py-2">
             Continue to Next Step
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
